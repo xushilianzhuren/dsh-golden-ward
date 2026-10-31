@@ -1,11 +1,23 @@
 {
   "name": "dsh-golden-ward",
   "version": "1.0.0",
-  "description": "Customization golden guardian: capture a golden copy of any frequently-overwritten file (default: the dsh-market web client) and restore it whole-file via /goldenward/api (status/init/restore). Pair with a watchdog for 60s auto-heal after upgrades.",
+  "description": "定制金身守护器：给任何频繁被升级覆盖的文件（默认=插件市场网页端client）捕获金身正本，被覆盖后经 /goldenward/api（状态/捕获/恢复）整文件原子恢复；配套看门狗60秒自愈，升级覆盖零手工。",
   "license": "MIT",
   "type": "module",
   "main": "./index.js",
-  "exports": { ".": "./index.js" },
-  "files": ["index.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
 }
