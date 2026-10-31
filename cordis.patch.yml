@@ -1,0 +1,3 @@
+- insert:
+  - id: golden-ward
+    name: "@local/dsh-golden-ward"
